@@ -1,0 +1,36 @@
+h1, h2 {
+  font-family: $main-font;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-size: 2.8em;
+}
+
+.valign-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  color: white;
+  height: 98vh;
+  width: 98vw;
+}
+
+.bg {
+  // background-color: red;
+  bottom: 0;
+  left: 0;
+  opacity: .2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
