@@ -17,7 +17,7 @@ gulp.task('compile-scss', () => {
 //Add presets as per requirement
 gulp.task('compile-es6', () => {
     return gulp
-            .src('src/scripts/*.js')
+            .src('src/scripts/**/*.js')
             .pipe(babel({
                 presets: ['es2015']
             }))
