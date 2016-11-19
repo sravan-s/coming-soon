@@ -1,28 +1,13 @@
-// (() => {
-//   $.magicCanvas.draw({
-//     type: 'random-move',
-//     rgb: circlePos => {
-//       let px = circlePos.x;
-//       let py = circlePos.y;
-//       // do some computation....
-//       return {
-//         r: parseInt(px % 255),
-//         g: parseInt(py % 255),
-//         b: 203
-//       };
-//     }
-//   });
-// })();
-
 if (!Detector.webgl) {
   Detector.addGetWebGLMessage();
 } else {
 
   var years = ['2000'];
   var container = document.getElementById('container');
-  var globe = new DAT.Globe(container);
+  var globe = new DAT.Globe(container, {
+    imgDir: '/assets/images/'
+  });
 
-  console.log(globe);
   var i, tweens = [];
 
   var settime = function(globe, t) {

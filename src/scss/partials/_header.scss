@@ -1,0 +1,21 @@
+header {
+  h1, h2 {
+    font-family: $main-font;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    top: 0;
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    font-size: 3.5em;
+    top: 48%;
+  }
+  .x {
+    color: crimson;
+  }
+}
